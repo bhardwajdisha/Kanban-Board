@@ -1,0 +1,57 @@
+.top-navbar{
+    display: flex;
+    min-height: 6%;
+
+    input{
+        height: 100%;
+        text-align: center;
+        background-color: whitesmoke;
+        border:none;
+        outline: none;
+        font-size: 0.9rem;
+        position: relative;
+        left:0
+    }
+
+    .form-inline{
+        background-color: whitesmoke;
+        padding-left:2%;
+         border-radius: 7%;
+    }
+
+    .top-nav-contents{
+        display: flex;
+        margin-left: auto;
+        width:20%;
+        justify-content: space-between;
+        align-items: center;
+    
+        .add-btn{
+            text-align: center;
+            border-radius: 80%;
+            position: relative;
+            height:80%;
+            margin:2px;
+            svg{
+                vertical-align: top;
+                height:100%;
+            }
+        }
+        .notification {
+            height: 100%;
+            svg{
+                min-height: 100%;
+
+            }
+        }
+        .user-name{
+            p{
+                display: inline;
+                font-weight: 650;
+            }
+            svg{
+                margin-right: 9px;;
+            }
+        }
+    }
+}
