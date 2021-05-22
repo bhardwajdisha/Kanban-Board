@@ -1,6 +1,6 @@
 import React from 'react'
 import {Dropdown} from 'react-bootstrap'
-import {BsClipboardData,BsFilter} from 'react-icons/bs'
+import {BsClipboardData} from 'react-icons/bs'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {HiOutlineSortAscending,HiOutlineDotsHorizontal} from 'react-icons/hi'
 import {BiFilter} from 'react-icons/bi'
