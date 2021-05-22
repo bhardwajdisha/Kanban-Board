@@ -4,6 +4,8 @@
     margin-top: 1.5rem;
     align-items: center;
     padding-left: 1.2%;
+    font-weight: bold;
+    min-width: 100%;
 
     .view-dropdown{
         display: flex;
@@ -11,7 +13,7 @@
 
         p{
             margin-top: 12px;
-            color:rgb(53, 53, 53);
+            color:rgba(53, 53, 53, 0.664);
             margin-right:3px;
         }
 
@@ -29,9 +31,65 @@
 
     .side-content{
         display: flex;
-        flex-wrap: wrap;
         margin-left:auto;
-        width: 60%;
         justify-content: flex-end;
+        align-items: center;
+
+        .view-search{
+            border: 1px solid rgba(59, 59, 59, 0.479);
+            border-radius: 23px;
+            background-color: white;
+            margin-right: 4%;
+            padding-left:10px;
+            max-width: 140px;
+
+            input{
+                border: none;
+                width: 80%;
+                height: 80%;
+                padding-left: 8%;
+                &:focus{
+                    outline:none;
+                }
+            }
+        }
+
+        .viewbar-filter{
+            display: flex;
+            flex-direction: row;
+            width: 100px;
+        }
+        .viewbar-button{
+            outline: none;
+            border:none;
+            background:none;
+            color:rgba(53, 53, 53, 0.637);
+            width:100%;
+            display: inline;
+            font-weight: bold;
+
+            &:focus{
+                outline:none;
+                border:none;
+            }
+            svg{
+                margin-right:4% ;
+                
+            }
+        }
+
+        .viewbar-sort{
+            display: flex;
+            color:rgba(53, 53, 53, 0.637);
+            width:150px;
+
+            .time{
+                color: black;
+            }
+        }
+        .viewbar-moreInfo{
+            padding-left:3%;
+            margin-right: 5%;
+        }
     }
 }
