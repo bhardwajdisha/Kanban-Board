@@ -1,0 +1,54 @@
+.task{
+    background-color: white;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.788);
+
+    .task-header{
+        color:black;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+        padding-bottom: 8px;
+        margin-bottom: 6px;
+
+        .task-image{
+            height: 140px;
+            margin-top: 6px;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+       
+
+    }
+
+        .duration{
+            padding: 5px 0px;
+            svg{
+                 margin-right: 8px;
+            } 
+        }
+
+        .task-footer{
+            display: flex;
+            justify-content: space-between;
+
+            .messages {
+                font-size: 12px;
+                
+                svg{
+                    margin-right: 4px;
+                }
+            }
+            .level{
+                border: none;
+                border-radius: 10px;
+                padding:1px 6px;
+                font-weight: 600;
+                text-shadow: rgba(37, 3, 3, 0.11) 2px 0 4px;
+            }
+        }
+    
+    
+}

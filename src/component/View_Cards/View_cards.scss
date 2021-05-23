@@ -2,14 +2,19 @@
     margin-top: 5%;
     border:none;
     border-radius: 23px;
-    padding-left: 8%;
+    padding : 4% 6%;
+    padding-top: 0;
     color:rgba(0, 0, 0, 0.712);
     display: flex;
     flex-direction: column;
-    background-color: rgba(222, 247, 247, 0.384);
+    background-color: rgba(222, 247, 247, 0.712);
     .task-header{
         font-weight: bold;
         font-size: 1.2rem;
+
+        .task-heading{
+            margin-top: 5px;
+        }
 
         .task-info{
             button{
