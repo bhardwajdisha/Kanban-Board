@@ -20,59 +20,66 @@ export const BoardData= [
     },
     {
         id:'B',
-        title:'To-Do',
+        title:'In Progress',
         color: '#101cbc',
         tasks:[
                 {
-                    name:'User Testing',
-                    imgUrl:'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/48a71879146005.5cb9ed0463145.jpg',
-                    duration:'19-23 December',
+                    name:'High fidelity designs',
+                    imgUrl:'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/116775067/original/267f8eb65f83bbdb13284f96321f4fa8fff53d74/design-a-high-fidelity-website-mockup.png',
+                    duration:'10-23 December',
                     level:'Medium',
-                    messages: 1
+                    messages: 4
                 },
                 {
-                    name:'Developing',
+                    name:'Prototyping',
                     duration:'19-23 December',
-                    level:'Low',
-                    messages: 0
+                    level:'Medium',
+                    messages: 2
                 }
             ]
     },
     {
         id:'C',
-        title:'To-Do',
+        title:'Review',
         color: '#ff8000',
         tasks:[
                 {
-                    name:'User Testing',
-                    duration:'19-23 December',
-                    level:'Medium',
-                    messages: 1
+                    name:'Components',
+                    duration:'10-23 December',
+                    level:'High',
+                    messages: 2
                 },
                 {
-                    name:'Developing',
-                    duration:'19-23 December',
-                    level:'High',
-                    messages: 0
+                    name:'Design system',
+                    imgUrl:"https://miro.medium.com/max/1200/1*bArNJOHSdhb0Ji1zpH8Q5w.png",
+                    duration:'10-23 December',
+                    level:'Medium',
+                    messages: 3
                 }
             ]
     },
     {
         id:"D",
-        title:'To-Do',
+        title:'Completed',
         color: '#14eb55',
         tasks:[
                 {
-                    name:'User Testing',
-                    duration:'19-23 December',
+                    name:'Case studies',
+                    duration:'9 December',
                     level:'Medium',
                     messages: 1
                 },
                 {
-                    name:'Developing',
-                    duration:'19-23 December',
+                    name:'Sketching',
+                    duration:'8 December',
+                    level:'Low',
+                    messages: 1
+                },
+                {
+                    name:'Wireframes',
+                    duration:'8 December',
                     level:'High',
-                    messages: 0
+                    messages: 2
                 }
             ]
     },
