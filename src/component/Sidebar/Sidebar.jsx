@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link } from 'react-router-dom'
 
 import {FaArtstation} from 'react-icons/fa'
@@ -9,6 +9,8 @@ import {sideNavData} from './sideNavData'
 import './Sidebar.scss'
 
 const SideBar = () => {
+
+    const [selected,setIsSelected] = useState()
     return (
         <div className='sideNav'>
             <div className="sideNav-header">
@@ -21,7 +23,7 @@ const SideBar = () => {
                 <ul className="nav-list">
                     {
                         sideNavData.map((item,index)=>(
-                            <li key={index} className={item.cName}>
+                            <li key={index} className={ `${item.cName} ${selected === index?'nav-active': ''}`} onClick={()=>setIsSelected(index)}>
                                 <Link to={item.path}>
                                     {item.icon}
                                     <span>{item.title}</span>

@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items:  center;   
     font-family: 'PT Sans', sans-serif;
-
+    max-width: 350px;
     .sideNav-header{
         background-image: radial-gradient(circle at 15.83% 47.01%, #de06dc 0, #c600e2 16.67%, #ab01e8 33.33%, #880ced 50%, #5819f2 66.67%, #0024f7 83.33%, #002dfb 100%);
         background-size: 100%;
@@ -28,6 +28,8 @@
 
     .sideNav-contents{
         color: rgb(58, 57, 57);
+        width:100%;
+        text-align: center;
 
         .nav-list{
             margin-top: 2rem;
@@ -42,11 +44,12 @@
             display: flex;
             justify-content: start;
             align-items: center;
-            padding: 8px 0px 8px 0px;
+            padding: 8px 0px 8px 6%;
             list-style: none;
             height: 3rem;
-           font-weight: 650;
+            font-weight: 650;
             font-size: 16px;
+            transition: 6ms ease-out;
 
             span{
                 margin-left: 1.5rem;
@@ -55,6 +58,9 @@
                 width: 1.5rem;
                 height:1.5rem;
             }
+        }
+        .nav-active{
+            background: rgb(218, 245, 245);
         }
     }
 
