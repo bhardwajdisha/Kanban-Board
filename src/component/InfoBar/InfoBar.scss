@@ -1,8 +1,12 @@
 .info-bar{
     display:flex;
-    margin-top:0.3rem;
+    margin-top:1.2%;
     width:100%;
 
+    @media (max-width: 900px){
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
     .dropdown-icon{
             background-color:#52CFF3;
             padding:0.5% 1.3%;

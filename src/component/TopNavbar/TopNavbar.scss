@@ -1,31 +1,51 @@
 .top-navbar{
     display: flex;
-    min-height: 6%;
-
-    input{
-        height: 100%;
-        text-align: center;
-        background-color: whitesmoke;
-        border:none;
-        outline: none;
-        font-size: 0.9rem;
-        position: relative;
-        left:0
+    max-height: 50px;
+    margin-bottom: 9px;
+    margin-right: -15px;
+    margin-left: -15px;
+    @media (max-width: 900px){
+        flex-wrap: nowrap;
     }
 
-    .form-inline{
-        background-color: whitesmoke;
-        padding-left:2%;
-         border-radius: 15px;
+    .view-search{
+        border-radius: 23px;
+        background-color: rgba(172, 169, 169, 0.151);
+        margin-right: 4%;
+        padding-left:10px;
+        width:20%;
+        min-width: 250px;
+        vertical-align: middle;
+        margin-left: 20px;
+        max-height:50px;
+
+        input{
+            border: none;
+            background-color: rgba(185, 181, 181, 0);
+            width: 80%;
+            height: 80%;
+            padding-left: 8%;
+            &:focus{
+                outline:none;
+            }
+        }
+        svg{
+            vertical-align: middle;
+           margin-left: 4px;
+           margin-top: 2px;;
+        }
     }
 
     .top-nav-contents{
         display: flex;
         margin-left: auto;
-        width:20%;
-        justify-content: space-between;
+        width:40%;
+        justify-content: flex-end;
         align-items: center;
     
+        div{
+            margin: 0 3%;
+        }
         .add-btn{
             text-align: center;
             border-radius: 80%;
@@ -34,6 +54,7 @@
             margin:2px;
             svg{
                 vertical-align: top;
+                margin-top: 20%;
                 height:100%;
             }
         }

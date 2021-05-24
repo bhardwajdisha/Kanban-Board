@@ -11,3 +11,8 @@ body{
     height: 100%;
     display: flex;
 }
+@media only screen and (max-width: 900px) {
+        .App{
+            flex-direction: column;   
+        }
+}

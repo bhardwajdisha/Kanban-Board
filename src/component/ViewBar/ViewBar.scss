@@ -7,9 +7,16 @@
     font-weight: bold;
     min-width: 100%;
 
+    @media (max-width:900px){
+        display: block;
+    }
     .view-dropdown{
         display: flex;
         align-items: center;
+
+        @media (max-width:900px){
+            margin-bottom: 2%;
+        }
 
         p{
             margin-top: 12px;
@@ -34,6 +41,10 @@
         margin-left:auto;
         justify-content: flex-end;
         align-items: center;
+
+        @media (max-width:900px){
+            justify-content: space-between;
+        }
 
         .view-search{
             border: 1px solid rgba(59, 59, 59, 0.479);

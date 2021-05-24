@@ -19,7 +19,7 @@ const SideBar = () => {
                     <span> TeamSpace</span>
                 </Link>
             </div>
-            <div className="sideNav-contents">
+            <div className="sideNav-contents ">
                 <ul className="nav-list">
                     {
                         sideNavData.map((item,index)=>(
