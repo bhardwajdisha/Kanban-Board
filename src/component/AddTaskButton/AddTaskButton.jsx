@@ -4,9 +4,9 @@ import {TiPlus} from 'react-icons/ti'
 
 import "./AddTaskButton.scss"
 
-const AddTaskButton = () => {
+const AddTaskButton = ({showAdd}) => {
     return (
-        <button className="add-task-button">
+        <button className="add-task-button" onClick={showAdd}>
             <TiPlus />
             Add Task
         </button>

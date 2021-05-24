@@ -9,7 +9,7 @@ import './TopNavbar.scss'
 
 const TopNavbar = () => {
     return (
-        <div className="top-navbar">
+        <div className="top-navbar row">
             <Form inline className="search">
                 <AiOutlineSearch/>
                 <FormControl type="text" placeholder="Search for anything" className="mr-sm-2" />

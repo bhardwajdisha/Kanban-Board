@@ -9,7 +9,7 @@ import './kanban-board.scss'
 
 const KanbanBoard = () => {
 
-    const [Data,setBoardData] = useState(BoardData)
+    const [Data] = useState(BoardData)
     return (
         <Container fluid>
             <Row xs={1} sm={1} md={2} lg={4}>
