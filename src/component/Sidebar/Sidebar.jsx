@@ -12,6 +12,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 const SideBar = () => {  
     const [selected,setIsSelected] = useState()
     const [width, setWidth] = useState(window.innerWidth);
+    const [showSideNav, setShowSideNav]=useState(true)
 
     useEffect(() => {
         function handleResize() {
@@ -26,7 +27,7 @@ const SideBar = () => {
     },[width]);
 
     function handleSideNavToggle() {
-        console.log("toggle it");
+        console.log('toggle')
     }
 
     return (
@@ -44,7 +45,7 @@ const SideBar = () => {
                         type="button" 
                         data-toggle="collapse" 
                         data-target="#navbarSupportContent" 
-                        aria-controls="navbarSupportContent" aria-expanded="true" aria-label="Toggle navigation"
+                        aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation"
                     >
                         <GiHamburgerMenu />
                     </button>
