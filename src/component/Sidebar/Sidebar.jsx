@@ -23,10 +23,12 @@ const SideBar = () => {
     }, [width]);
 
     useEffect(() => {
-        width < 900 && handleSideNavToggle();
+        width < 900 && setShowSideNav(false);
+        width >= 900 && setShowSideNav(true);
     },[width]);
 
     function handleSideNavToggle() {
+        setShowSideNav(!showSideNav);
         console.log('toggle')
     }
 
@@ -40,18 +42,12 @@ const SideBar = () => {
                     </Link> 
                 </div>
                 {width < 900 && <div className="ToggleButton">
-                    <button onClick={() => handleSideNavToggle()}
-                        className="navbar-toggler"  
-                        type="button" 
-                        data-toggle="collapse" 
-                        data-target="#navbarSupportContent" 
-                        aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation"
-                    >
+                    <button onClick={() => handleSideNavToggle()} >
                         <GiHamburgerMenu />
                     </button>
                 </div>}
             </div>
-            <div className={` ${width < 900?'collapse':''} navbar-collapse`} id="navbarSupportContent">
+            <div className={` navbar-collapse ${showSideNav ? '':'hide-nav' }`} id="navbarSupportContent">
                 <div className=" nav-items sideNav-contents">
                     <ul className=" nav-list ">
                         {
