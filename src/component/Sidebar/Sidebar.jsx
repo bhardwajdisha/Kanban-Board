@@ -41,10 +41,8 @@ const SideBar = () => {
                         <span> TeamSpace</span>
                     </Link> 
                 </div>
-                {width < 900 && <div className="ToggleButton">
-                    <button onClick={() => handleSideNavToggle()} >
+                {width < 900 && <div className="ToggleButton"  onClick={() => handleSideNavToggle()} >
                         <GiHamburgerMenu />
-                    </button>
                 </div>}
             </div>
             <div className={` navbar-collapse ${showSideNav ? '':'hide-nav' }`} id="navbarSupportContent">
