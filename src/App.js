@@ -1,5 +1,4 @@
 import React from 'react'
-import {Route, Switch} from 'react-router-dom'
 import './App.css';
 
 import SideBar from './component/Sidebar/Sidebar'
@@ -9,9 +8,8 @@ function App() {
   return (
     <div className="App">
       <SideBar />
-        <Switch>
-          <Route  exact path='/'  component={MainPage} />
-        </Switch>
+       <MainPage />
+        
     </div>
   );
 }

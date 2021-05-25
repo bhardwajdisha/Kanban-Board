@@ -9,7 +9,7 @@ import {sideNavData} from './sideNavData'
 import './Sidebar.scss'
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-const SideBar = () => {
+const SideBar = () => {  
     const [selected,setIsSelected] = useState()
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -39,7 +39,7 @@ const SideBar = () => {
                     </Link> 
                 </div>
                 {width < 900 && <div className="ToggleButton">
-                    <button
+                    <button onClick={() => handleSideNavToggle()}
                         className="navbar-toggler"  
                         type="button" 
                         data-toggle="collapse" 
