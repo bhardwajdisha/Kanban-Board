@@ -1,10 +1,10 @@
 import React from 'react'
+
 import TopNavbar from '../../component/TopNavbar/TopNavbar'
 import InfoBar from '../../component/InfoBar/InfoBar'
 import ViewBar from '../../component/ViewBar/ViewBar'
 import KanBanBoard from '../../component/Kanban_Board/Kanban-board'
 
-import {Row,Col} from 'react-bootstrap'
 import './main-page.scss'
 
 const MainPage = () => {

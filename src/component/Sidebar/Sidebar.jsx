@@ -50,7 +50,7 @@ const SideBar = () => {
                     </button>
                 </div>}
             </div>
-            <div className={` ${width < 900?'collapse navbar-collapse':''}`} id="navbarSupportContent">
+            <div className={` ${width < 900?'collapse':''} navbar-collapse`} id="navbarSupportContent">
                 <div className=" nav-items sideNav-contents">
                     <ul className=" nav-list ">
                         {
