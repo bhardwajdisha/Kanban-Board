@@ -1,6 +1,8 @@
 import React from 'react'
-import {BiCalendar} from 'react-icons/bi'
+import {BiCalendar,BiUserCircle} from 'react-icons/bi'
 import {RiMessage2Line} from 'react-icons/ri'
+import SvgComponent from './user.jsx'
+
 import './Task.scss'
 
 const Task = ({tasks}) => {
@@ -19,8 +21,8 @@ const Task = ({tasks}) => {
                                 }
                           </div>
                           <div className="task-details">
-                              <div>
-                                  Assigned:
+                              <div className="assigned">
+                                  Assigned: <SvgComponent /> 
                               </div>
                               <div className='duration'>
                                 <BiCalendar />
